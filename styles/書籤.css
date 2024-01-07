@@ -1,0 +1,32 @@
+.div1 {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    top:50%; /* 距離畫面頂部的位置，可以調整 */
+    transform: translateY(-50%);
+    background-color:rgba(139, 239, 172, 0.356);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; /* 或者其他適合的高度值 */
+    z-index: 1;
+}
+
+.div1 li {
+    margin-bottom: 10px;
+
+}
+
+.div1 a {
+    text-decoration: none;
+    color: rgb(184, 91, 128);
+    font-size: 24px;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.div1 a:hover {
+    background-color: rgb(184, 91, 128);
+    color: rgb(139, 239, 172);
+}

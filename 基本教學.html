@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>日本麻將教學網站</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="styles/基本.css">
+    <link rel="stylesheet" type="text/css" href="styles/首頁.css">
+    <link rel="stylesheet" type="text/css" href="styles/書籤.css">
+    <link rel="stylesheet" type="text/css" href="styles/小翠兒狗頭定位.css">
+
+    <script src="scripts/書籤動畫效果.js"></script>
+  
+  </head>
+  <body>
+    <div class="grid"  style="height: 100%;">
+
+      <header class="header">
+        <div class="logo"> <!-- 這裡放你的logo -->
+          <a href="./">
+            <img src="images/麻將.png" height="100px">
+          </a>    
+        </div>
+        <h1 class="title">日本麻將教學網站</h1>
+      </header>
+    
+      <header class="sticky-header__header"> 
+        <table class="sticky-table-headers">
+            <tbody>
+                <tr>
+                  <th><a href="基本教學.html"><button>👨‍🎓基本教學</button></a></th>
+                  <th><a href="役種介紹.html"><button>🀄役種介紹</button></a></th>
+                  <th><a href="牌效練習.html"><button>🧠牌效練習</button></a></th>
+                  <th><a href="其他資訊.html"><button>💻其他資訊</button></a></th>
+                  <th><a href="關於我們.html"><button>😀關於我們</button></a></th>
+                  
+                </tr>
+            </tbody>
+        </table>
+      </header>
+      <br>
+      <div class="parent">
+        <div class="div1">       
+            <li><a href="#1">一.麻將牌</a></li>
+            <li><a href="#2">二.牌型</a></li>
+            <li><a href="#3">三.宝牌</a></li>
+            <li><a href="#4">四.牌局的进行</a></li>
+            <li><a href="#6">五.简单的役</a></li>
+
+        </div>
+          <div class="div3">
+            <section id="1">
+                <h2>一.麻將牌</h2><br>
+                <img src="images\基本教學\1.png"><br>
+                麻將牌一共有34種牌，分為5類牌，分別是——萬子，筒子，索子，風牌，三元牌。<br>
+                每種牌一共有4張，總共136張。
+            </section>
+        
+            <section id="2">
+                <br><h2>二.牌型</h2><br>
+                <img src="images\基本教學\2.0.png"><br>
+                【順子】<br>由3张同花色组成连续数字的牌，称为顺子。<br>
+                <br><img src="images\基本教學\2.1.png"><br>
+                【刻子和對子】<br>由3張完全相同的牌組成的牌，稱為刻子。<br>
+                由2張完全相同的牌組成的牌，稱為對子。<br>
+                <br><img src="images\基本教學\2.2.png"><br>
+                【手牌】<br>對局時每個人手裡常有13張牌，這就是我們的手牌。<br>
+                每回合摸一張組成14張，然後打出一張，隨著不斷地摸入和打出，手牌將會不斷變化。<br>
+                <img src="images\基本教學\2.3.png"><br>
+                當自己的手牌形成了4個（順子或刻子）+1個對子，就達到了麻將的最終目標——和牌。<br>
+                和牌公式：AAA*a+ABC*(4-a)+DD<br>
+                <img src="images\基本教學\2.4.png"><br>
+                但是由於我們的手牌常有的是13張，必然會差一張才會形成和牌，這個狀態就被叫做聽牌。
+            </section>
+        
+            <section id="3">
+                <br><h2>三.宝牌</h2><br>
+                <img src="images\基本教學\3.png"><br>
+                對局中會看到的亮閃閃的牌，稱為寶牌（dora）。<br>
+                通常存在的寶牌有三種：紅5萬，紅5餅，紅5條。<br>
+                <br>在遊戲的左上角翻出的一張牌為寶牌的指示牌，當局寶牌為翻出的指示牌的下一張。<br>
+                例如：指示牌為3餅，則寶牌為4餅。<br>
+                <br>數牌：按1→2→3→4→5→6→7→8→9→1→…的順序迴圈。<br>
+                風牌：按東→南→西→北→東→…的順序迴圈。<br>
+                三元牌：按白→發→中→白→…的順序迴圈。<br>
+                <br>※寶牌在和牌時可以加1番但不可做起和番。
+            </section>
+        
+            <section id="4">
+                <br><h2>四.牌局的进行</h2><br>
+                <img src="images\基本教學\4.0.png"><br>
+                【介面的組成】<br>
+                左上角為寶牌指示牌區域。<br>
+                “東2局”表示現在是東風場的第2局，遊戲的局目資訊會在這裡進行表示更新。<br>
+                “04”表示剩餘牌數，如果剩餘0張，這一局牌就遊戲結束了。<br>
+                “24200”表示我們當前擁有的點數，也就是持有的籌碼。<br>
+                “東”代表誰是這一局的莊家。<br>
+                <br><img src="images\基本教學\4.1.png"><br>
+                【吃】<br>
+                當你的上家（左手邊）打出的1張牌可以與手牌中的2張組成順子，就可以選擇“吃”的操作，並打出1張不要的牌。<br>
+                例：上家打出的5條可以和手中的3條和4條組成345條的順子，所以可以進行“吃”。
+                <br><img src="images\基本教學\4.2.png"><br>
+                【碰】<br>
+                當任意一家打出的牌，可以與手牌中的2張組成刻子時，就可以選擇點擊“碰”將牌碰過來，並打出1張不要的牌。
+                <br><img src="images\基本教學\4.3.png"><br>
+                【杠——暗杠】<br>
+                當手上有4張一模一樣的牌，就可以選擇“杠”這個操作，這種杠被叫做暗杠。
+                <br><img src="images\基本教學\4.4.png"><br>
+                【杠——明杠】<br>
+                當手裡有一組刻子，場上任意一家打出這張牌即可杠，這種杠被叫做明杠。
+                <br><img src="images\基本教學\4.5.png"><br>
+                【杠——加杠】<br>
+                當碰過之後，再次摸進與碰相同的牌後進行的杠，被叫做加杠。
+                所有的杠都算作一個刻子。
+            </section>
+        
+            <section id="6">
+                <p><br><h2>五.简单的役</h2><br>
+                <img src="images\基本教學\5.0.png"><br>
+                在日麻的規則中，僅僅只是組成了之前說的牌型並不能和牌，還需要有——役。<br>
+                “役”是特定牌的組合，不滿足任何役是無法和牌的，所以一定要注意哦<br>
+                接下來就介紹三種比較簡單常用的役<br>
+                <br><img src="images\基本教學\5.1.png"><br>
+                【役牌】<br>
+                役牌是由風牌（場風、自風）、三元牌組成的刻子（碰也可以）<br>
+                由於並不是所有風牌都是當前的役牌，所以要仔細看清對局中間的提示哦<br>
+                <img src="images\基本教學\5.2.png"><br>
+                ※簡單的小圖示<br>
+                <br><img src="images\基本教學\5.3.png"><br>
+                【斷么九】<br>
+                當牌種不含所有的數位1和9、風牌、三元牌時，並符合和牌的規律時即可和牌，可以吃碰，新人之友。<br>
+                <br><img src="images\基本教學\5.4.png"><br>
+                【立直】<br>
+                只要在門前清（不吃、碰、明杠、加杠）的時候達成聽牌，並且剩餘的點數≥1000，就可以進行立直。
+            </section>
+        </div>
+        
+        </div> 
+        <div class="div2"><img src="images/小翠兒狗頭.png" height="50px"> </div> 
+        <div class="div4"></div> 
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
+
+

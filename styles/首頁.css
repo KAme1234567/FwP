@@ -1,0 +1,19 @@
+
+
+.eee {
+    background-color: rgb(139, 239, 172);
+    color: rgb(226, 111, 157);
+    border: none;
+    padding: 12px 24px; /* 調整內邊距，使按鈕更有質感 */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* 讓按鈕擴展到 100% 的寬度 */
+    font-size: 32px; /* 設定字體大小 */
+    font-weight: bold; /* 加粗文本 */
+}
+
+.eee:hover {
+    background-color: rgb(184, 91, 128);
+    color: rgb(139, 239, 172);
+}

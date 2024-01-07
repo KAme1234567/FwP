@@ -1,0 +1,61 @@
+.div3 {
+    grid-area: 1 / 2 / 6 / 5;
+    height: auto;
+    background-color: rgba(139, 239, 172, 0.296);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 避免內容溢出 */
+    display: flex;
+    flex-direction: column; /* 垂直排列內容 */
+
+    /* 新增下面這行，讓iframe隨著div3變化 */
+    position: relative;
+}
+
+
+.div3 iframe {
+    width: 100%; /* 讓連結和iframe寬度充滿div3 */
+    height: 800px;
+    margin-bottom: 10px; 
+}
+
+
+/* 美化連結 */
+
+
+.div3 a {
+    color:  rgb(45, 117, 69);
+    text-decoration: none; /* 去掉底線 */
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 80px; /* 這裡調整連結文字的大小 */
+}
+
+.div3 a:hover {
+    color: #d81b60; /* 深粉紅色字體 */
+}
+
+/* 加入淡入淡出效果 */
+.div3 a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff69b4; /* 底線的粉紅色 */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.div3 a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

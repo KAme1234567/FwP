@@ -1,0 +1,12 @@
+.div2 {
+    grid-area: 4 / 1 / 6 / 2;
+    position: relative; /* 加入相對定位 */
+}
+
+.div2 img {
+    position: absolute; /* 加入絕對定位 */
+    bottom: 0; /* 距離底部的距離 */
+    max-width: 100%; /* 圖片最大寬度為其容器的寬度 */
+    height: auto; /* 保持原始比例 */
+}
+
